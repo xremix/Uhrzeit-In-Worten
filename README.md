@@ -26,3 +26,5 @@ Dies kann in der `index.coffee`-Datei aber auch über die Position angepasst wer
 ```
 
 ![Uhrzeit in Worten Übersicht Screenshot](https://raw.githubusercontent.com/xremix/Uhrzeit-In-Worten/master/screenshot_overview.png)
+
+![Analytics](https://ga-beacon.appspot.com/UA-40522413-9/Zeit-In-Worten/readme?pixel)

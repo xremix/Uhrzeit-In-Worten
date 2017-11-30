@@ -1,6 +1,6 @@
 #
 # Time in Words widget for Übersicht
-# Toni H https://github.com/xremix/Zeit-In-Worten
+# Toni H https://github.com/xremix/Uhrzeit-In-Worten
 # Original Code by Raphael H.
 #
 

@@ -3,7 +3,7 @@ Zeigt die aktuelle Uhrzeit menschlich lesbar in Wörtern da auf dem Desktop dar.
 
 *Interested in an english version? Check out the original version from [raphaelhanneken](https://github.com/raphaelhanneken/time-in-words)*
 
-![Zeit in Worten](https://raw.githubusercontent.com/xremix/Zeit-In-Worten/master/screenshot_detail.png)
+![Zeit in Worten Screenshot](https://raw.githubusercontent.com/xremix/Zeit-In-Worten/master/screenshot_detail.png)
 
 ## Installation
 
@@ -24,3 +24,5 @@ Dies kann in der `index.coffee`-Datei aber auch über die Position angepasst wer
     left:   "1%"
     right:  "auto"
 ```
+
+![Zeit in Worten Übersicht Screenshot](https://raw.githubusercontent.com/xremix/Zeit-In-Worten/master/screenshot_overview.png)

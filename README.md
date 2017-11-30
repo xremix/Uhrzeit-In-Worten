@@ -8,6 +8,6 @@ Zeigt die aktuelle Uhrzeit menschlich lesbar in Wörtern da auf dem Desktop dar.
 ## Installation
 
 1. [Übersicht](http://tracesof.net/uebersicht/) herunterladen und installieren
-2. Download des [Widgets](https://github.com/xremix/Zeit-In-Worten/releases/)
-3. Kopiere den `zeitinworten.widget` Ordner in deinen Widget Ordner. Du findest eine Anleitung dazu auf der [Übersicht Webseite](http://tracesof.net/uebersicht-widgets/)
+2. [Download](https://github.com/xremix/Zeit-In-Worten/releases/) des Widgets
+3. Kopiere den `zeitinworten.widget` Ordner in deinen Widget Ordner. Du findest eine Anleitung dazu auch auf der [Übersicht Webseite](http://tracesof.net/uebersicht-widgets/)
 4. Fertig!

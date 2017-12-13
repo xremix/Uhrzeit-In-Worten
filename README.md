@@ -2,6 +2,7 @@
 Zeigt die aktuelle Uhrzeit menschlich lesbar in Wörtern da auf dem Desktop dar.
 
 *Interested in an english version? Check out the original version from [raphaelhanneken](https://github.com/raphaelhanneken/time-in-words)*
+**I just started to work on an version including localization (de, en)!**
 
 ![Uhrzeit in Worten Screenshot](https://raw.githubusercontent.com/xremix/Uhrzeit-In-Worten/master/screenshot_detail.png)
 

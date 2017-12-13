@@ -47,23 +47,42 @@ command: "echo hello"
 # Lower the frequency for more accuracy.
 refreshFrequency: (1000 * 3) # (1000 * n) seconds
 
+language = navigator.language;
+texts = {};
+if (language.indexOf("de") > -1){
+  texts.words = {
+    clock: "uhr";
+  }
+  texts.hours = [null, "ein", "zwei", "drei", "vier", "fünf", "sechs", "sieben",
+    "acht", "neun", "zehn", "elf", "zwölf"]
+  texts.ones = [null, "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben",
+    "acht", "neun"]
+  texts.teens = ["zehn", "elf", "zwölf", "dreizehn", "vierzehn", "fünfzehn",
+    "sechszehn", "siebenzehn", "achtzehn", "neunzehn"]
+  texts.tens = [null, null, "zwanzig", "dreißig", "vierzig", "fünfzig"]
+
+}else{
+  texts.words = {
+    clock: "<br/>";
+  }
+  texts.hours = [null, "one", "two", "three", "four", "five", "six", "seven",
+    "eight", "nine", "ten", "eleven", "twelve"]
+  texts.ones = [null, "one", "two", "three", "four", "five", "six", "seven",
+    "eight", "nine"]
+  texts.teens = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+    "sixteen", "seventeen", "eighteen", "nineteen"]
+  texts.tens = [null, null, "twenty", "thirty", "forty", "fifty"]
+}
 
 render: (o) -> """
   <div id="content">
-    <span id="hours"></span> uhr <span id="minutes"></span>
+    <span id="hours"></span> <span id="clock"></span> <span id="minutes"></span>
   </div>
 """
 
 
 update: (output, dom) ->
-  hours = [null, "ein", "zwei", "drei", "vier", "fünf", "sechs", "sieben",
-    "acht", "neun", "zehn", "elf", "zwölf"]
-  ones = [null, "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben",
-    "acht", "neun"]
-  teens = ["zehn", "elf", "zwölf", "dreizehn", "vierzehn", "fünfzehn",
-    "sechszehn", "siebenzehn", "achtzehn", "neunzehn"]
-  tens = [null, null, "zwanzig", "dreißig", "vierzig", "fünfzig"]
-
+  
   date   = new Date()
   minute = date.getMinutes()
   hour   = date.getHours()
@@ -84,6 +103,7 @@ update: (output, dom) ->
 
   $(dom).find("#hours").html(hour_str)
   $(dom).find("#minutes").html(minute_str)
+  $(dom).find("#clock").html(texts.words.clock)
 
 
 style: """
